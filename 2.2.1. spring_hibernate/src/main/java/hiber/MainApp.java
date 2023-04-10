@@ -32,7 +32,8 @@ public class MainApp {
 
         }
 
-        List<User> list = userService.getUserByModelAndSeries("Lexus", 253);
+        List<User> list = userService.getUserByCar(new Car("Lexus", 253));
+        System.out.println();
         System.out.println(list);
 
         context.close();
